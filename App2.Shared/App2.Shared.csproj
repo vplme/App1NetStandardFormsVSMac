@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.3.5.253-pre5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AboutPage.xaml" />
+    <EmbeddedResource Include="Views\ItemDetailPage.xaml" />
+    <EmbeddedResource Include="Views\ItemsPage.xaml" />
+    <EmbeddedResource Include="Views\LoginPage.xaml" />
+    <EmbeddedResource Include="Views\NewItemPage.xaml" />
+    <EmbeddedResource Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\AboutPage.xaml.cs">
+      <DependentUpon>..\..\App2\Views\AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemDetailPage.xaml.cs">
+      <DependentUpon>..\..\App2\Views\ItemDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemsPage.xaml.cs">
+      <DependentUpon>..\..\App2\Views\ItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>..\..\App2\Views\LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewItemPage.xaml.cs">
+      <DependentUpon>..\..\App2\Views\NewItemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
